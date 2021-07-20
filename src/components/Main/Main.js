@@ -5,9 +5,7 @@ import Container from "../Util/Container"
 function Main(props) {
 	return (
 		<main>
-			<Container>
-				<Calculator />
-			</Container>
+			<Calculator />
 		</main>
 	)
 }

@@ -1,6 +1,26 @@
+/* --- Variables --- */
 
+:root {
+  --main: #26BF66;
+  --light-accent: #59B7CC;
+  --dark-accent: #7A616C;
+  --light: #F4EFF2;
+  --dark: #181821;
+  --dark-trans: #18182199;
+  --heading-font: 'Knewave', serif;
+  --body-font: 'Oxygen', sans-serif;
+  --breakpoint-1: 650px;
+  --breakpoint-2: 1200px;
+  --card-size: 250px;
+  --header-height: 10vh;
+  --border-radius: 8px;
+}
 
-/* -- Base -- */
+/* --- Base --- */
+
+body {
+
+}
 
 a {
   text-decoration: none;
@@ -18,33 +38,56 @@ footer {
   min-height: 20vh;
 }
 
-
-/* -- Util -- */
+/* --- Util --- */
 
 .container {
   display: flex;
-  justify-content: center;
-  align-content: center;
+  padding: 0 1em;
+  min-height: 5em;
+  max-width: var(--breakpoint-2);
+  margin: 0 auto;
 }
 
+.container-center {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1em;
+  max-width: var(--breakpoint-2);
+  margin: 0 auto;
+}
 
-/* -- Calculator -- */
+@media (min-width: 700px) {
+  .container-center {
+    max-width: var(--breakpoint-1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.container-col {
+  display: flex;
+  flex-direction: column;
+  max-width: var(--breakpoint-2);
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+/* --- Calculator --- */
 
 .calculator {
   height: 80vh;
   width: 80vw;
-  max-width: 600px;
-  margin: 5vh auto;
+  max-width: 550px;
+  margin: 1vh auto;
   padding: 10px;
   box-shadow: var(--box-shadow);
   border-radius: 10px;
   background: var(--main);
-}
-
-@media (min-width: 600) {
-  .calculator {
-    width: 90vw;
-  }
 }
 
 /* -- Screen -- */
