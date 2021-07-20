@@ -1,7 +1,4 @@
 import React from "react"
-import { Output } from "../Util/functions"
-
-
 
 function Button(props) {
   return (
