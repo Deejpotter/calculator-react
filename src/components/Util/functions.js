@@ -12,6 +12,7 @@ export function Output(input) {
 export function Evaluate() {
     var text = document.getElementById("output-text").innerHTML;
     document.getElementById("old-text").innerHTML = text;
+    // eslint-disable-next-line
     text = eval(text);
     document.getElementById("output-text").innerHTML = text;
 }
